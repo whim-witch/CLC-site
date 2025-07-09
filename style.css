@@ -1,0 +1,232 @@
+body {
+    background-color: var(--color-background);
+    background-size: auto;
+    font-family: var(--mainfont);
+    font-size: clamp(1rem, 2.5vw, 2.5rem); 
+  }
+  
+       /* the "container" is what wraps your entire website */
+        /* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    max-width: 100%;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+    background-color: #000000;
+}
+
+
+
+        /* the area below is for all links on your page
+EXCEPT for the navigation */
+#container a {
+    color: #000000;
+    font-weight: bold;
+    /* if you want to remove the underline
+you can add a line below here that says:
+text-decoration:none; */
+}
+#container a:hover {
+    text-decoration: underline;
+    color: #F5A9B8;
+  }
+
+  
+  
+       /* navigation section!! */
+       #navbar {
+        height: 40px;
+        background-color: #000000;
+        /* navbar color */
+        width: 100%;
+    }
+
+    #navbar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+    #navbar li {
+        padding-top: 10px;
+    }
+
+    /* navigation links*/
+    #navbar li a {
+        color: #ffffff;
+        /* navbar text color */
+        font-weight: 800;
+        text-decoration: none;
+        /* this removes the underline */
+    }
+
+    /* navigation link when a link is hovered over */
+    #navbar li a:hover {
+        color: #F5A9B8;
+        text-decoration: underline;
+    }
+
+    #flex {
+        display: flex;
+    }
+
+
+  
+    h1 {
+      font-family: 'Rokkitt', serif;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 4rem;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-align: center
+    }
+  
+
+      body {
+        font-family: 'Rokkitt', serif;
+        color: #111;
+        font-size: 1rem;
+      }
+
+      body a{
+        color: #5BCEFA;
+        text-decoration: none;
+      }
+
+      body a:hover {
+        text-decoration: underline;
+      }
+
+    main {
+        background-color: #ffffff;
+        flex: 1;
+        padding: 40px;
+        order: 2;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    footer {
+        background-color: #000000;
+        /* background color for footer */
+       color: #ffffff;
+        max-height: 100px;
+        padding: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        /* this centers the footer text */
+    }
+
+    .responsive {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+
+
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #13092D;
+                border: 1px solid #000000;
+                padding: 10px;
+            }
+
+        /* BELOW THIS POINT IS MEDIA QUERY */
+
+        /* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
+
+ /* Style all font awesome icons */
+
+
+  .fa-brands{
+    padding: 5px;
+    font-size: 25px;
+    margin-top: 5px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa-brands:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #ea5976;
+    color: white;
+  }
+  
+  /* Whatsapp */
+  .fa-whatsapp {
+    background: #30e922;
+    color: white;
+  } 
+  /* Whatsapp */
+  .fa-discord {
+    background: #7e61ab;
+    color: white;
+  } 
+
+  .googleCalendar{
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 60%;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
