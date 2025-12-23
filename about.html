@@ -1,27 +1,30 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="https://kit.fontawesome.com/68741edc1f.js" crossorigin="anonymous"></script>
+        
     </head>
 <body>
     
-    <div id="container">
+ <div id="container">
         <h1>Cobra Lily <span style="color: #5BCEFA">Co</span><span style="color: #F5A9B8">ll</span><span style="color: #ffffff">ec</span><span style="color: #F5A9B8">ti</span><span style="color: #5BCEFA">ve</span></h1>
-            <nav id="navbar" style="margin-bottom: 0px;">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="mailto:cobralilycollective@gmail.com">Contact</a></li>
-                    <li><a href="">Surveys</a></li>
-                    <li><a href="/resources.html">Resources</a></li>
-                    <li><a href="/calendar.html">Calendar</a></li>
-                    <li><a href="https://cash.app/$cobralilycollective">Donate</a></li>
-                </ul>
-            </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="/index.html">Home</a>
+            <a href="/about.html" class="active">About</a>
+            <a href="mailto:cobralilycollective@gmail.com">Contact</a>
+            <a href="/surveys.html">Surveys</a>
+            <a href="/resources.html">Resources</a>
+            <a href="/calendar.html" >Calendar</a>
+            <a href="https://cash.app/$cobralilycollective">Donate</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        </div>
         </div>
 
         <div id="flex">
@@ -123,5 +126,7 @@ Like the cobra lily, we are beautiful and dangerous. We absorb what is trying to
         <a href="https://discord.gg/Fty9DGpMjf" target="_blank" class="fa-brands fa-discord"></a>
     </footer>
     </div>
+
+    <script src="/hamburger.js"></script>
 
 </body></html>
